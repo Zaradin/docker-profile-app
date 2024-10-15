@@ -26,6 +26,8 @@ services:
             - MONGO_INITDB_ROOT_PASSWORD=secret
         networks:
             - profile-network
+        volumes:
+            - C:/Users/Josh/Desktop/Agile Software Practice/lab_5/simple-profile-app/data:/data/db
 
     mongo-express:
         container_name: express
